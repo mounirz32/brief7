@@ -79,8 +79,9 @@ add_action('init', 'app_output_buffer');
    add_action('admin_menu', 'admin_menu_form');
 
    function admin_menu_form_main() {
-      echo '<h1>Mounir Zelouani</h1>';
+      require_once('post.php');
    }
+   
 
    function admin_menu_form_sub_archive() {
       
